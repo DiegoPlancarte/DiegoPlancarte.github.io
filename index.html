@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Super Mario Treasure Hunt</title>
+        <link rel="shortcut icon" href="assets/block.png">
+        <link rel="stylesheet" href="treasureHunt.css">
+    </head>
+    <body>
+        <audio controls id="audio">
+            <source src="assets/themeSong.mp3" type="audio/mpeg"></audio>
+                <h1 id=#top>Mario Treasure Hunt!</h1>
+        <!--<nav>
+            <a href="#footer">footer</a>
+        </nav>-->
+        <!--Rules
+        <h3>Rules</h3>
+            <ol>
+                <li>Avoid Bowser!</li>
+            </ol>-->
+        <!--Restart Button
+            <button type="submit" name="button" onclick="refreshPage()">Restart</button>-->
+            <table id="counts">
+            <tr>
+                <td>00000</td>
+                <td id="counter">0</td>
+                <td>
+                </td></td>
+                <td id="mario"><img src="assets/mario40.png" alt="mario"></td>
+                <td>x 0</td>
+                <td id="lifeCounter">3</td>
+            </tr>
+        </table>
+        <table id="rules">
+                <tr>
+                    <td><img src="assets/bowser40.png" alt="bowser"/ /></td>
+                    <td>You lose!</td>
+                </tr>
+                <tr>
+                    <td><img src="assets/plant40.png" alt="plant"/ /></td>
+                    <td>Lose a life</td>
+                </tr>
+                <tr>
+                    <td><img src="assets/coin40.png" alt="coin"/ /></td>
+                    <td>+1</td>
+                </tr>
+                <tr>
+                    <td><img src="assets/luigi40.png" alt="luigi"/ /></td>
+                    <td>+5</td>
+                </tr>
+                <tr>
+                    <td><img src="assets/peach40.png" alt="peach"></td>
+                    <td>+10</td>
+                </tr>
+        </table>
+        <table id="game">
+            <tr>
+                <td id="0" onclick="treasure(0)"><img src="assets/block40.png" alt="Mystery block"></td>
+                <td id="1" onclick="treasure(1)"><img src="assets/block40.png" alt="Mystery block"></td>
+                <td id="2" onclick="treasure(2)"><img src="assets/block40.png" alt="Mystery block"></td>
+                <td id="3" onclick="treasure(3)"><img src="assets/block40.png" alt="Mystery block"></td>
+                <td id="4" onclick="treasure(4)"><img src="assets/block40.png" alt="Mystery block"></td>
+                <td id="5" onclick="treasure(5)"><img src="assets/block40.png" alt="Mystery block"></td>
+            </tr>
+            <tr>
+                <td id="6" onclick="treasure(6)"><img src="assets/block40.png" alt="Mystery block"></td>
+                <td id="7" onclick="treasure(7)"><img src="assets/block40.png" alt="Mystery block"></td>
+                <td id="8" onclick="treasure(8)"><img src="assets/block40.png" alt="Mystery block"></td>
+                <td id="9" onclick="treasure(9)"><img src="assets/block40.png" alt="Mystery block"></td>
+                <td id="10" onclick="treasure(10)"><img src="assets/block40.png" alt="Mystery block"></td>
+                <td id="11" onclick="treasure(11)"><img src="assets/block40.png" alt="Mystery block"></td>
+            </tr>
+            <tr>
+                <td id="12" onclick="treasure(12)"><img src="assets/block40.png" alt="Mystery block"></td>
+                <td id="13" onclick="treasure(13)"><img src="assets/block40.png" alt="Mystery block"></td>
+                <td id="14" onclick="treasure(14)"><img src="assets/block40.png" alt="Mystery block"></td>
+                <td id="15" onclick="treasure(15)"><img src="assets/block40.png" alt="Mystery block"></td>
+                <td id="16" onclick="treasure(16)"><img src="assets/block40.png" alt="Mystery block"></td>
+                <td id="17" onclick="treasure(17)"><img src="assets/block40.png" alt="Mystery block"></td>
+            </tr>
+            <tr>
+                <td id="18" onclick="treasure(18)"><img src="assets/block40.png" alt="Mystery block"></td>
+                <td id="19" onclick="treasure(19)"><img src="assets/block40.png" alt="Mystery block"></td>
+                <td id="20" onclick="treasure(20)"><img src="assets/block40.png" alt="Mystery block"></td>
+                <td id="21" onclick="treasure(21)"><img src="assets/block40.png" alt="Mystery block"></td>
+                <td id="22" onclick="treasure(22)"><img src="assets/block40.png" alt="Mystery block"></td>
+                <td id="23" onclick="treasure(23)"><img src="assets/block40.png" alt="Mystery block"></td>
+            </tr>
+            <tr>
+                <td id="24" onclick="treasure(24)"><img src="assets/block40.png" alt="Mystery block"></td>
+                <td id="25" onclick="treasure(25)"><img src="assets/block40.png" alt="Mystery block"></td>
+                <td id="26" onclick="treasure(26)"><img src="assets/block40.png" alt="Mystery block"></td>
+                <td id="27" onclick="treasure(27)"><img src="assets/block40.png" alt="Mystery block"></td>
+                <td id="28" onclick="treasure(28)"><img src="assets/block40.png" alt="Mystery block"></td>
+                <td id="29" onclick="treasure(29)"><img src="assets/block40.png" alt="Mystery block"></td>
+            </tr>
+            <tr>
+                <td id="30" onclick="treasure(30)"><img src="assets/block40.png" alt="Mystery block"></td>
+                <td id="31" onclick="treasure(31)"><img src="assets/block40.png" alt="Mystery block"></td>
+                <td id="32" onclick="treasure(32)"><img src="assets/block40.png" alt="Mystery block"></td>
+                <td id="33" onclick="treasure(33)"><img src="assets/block40.png" alt="Mystery block"></td>
+                <td id="34" onclick="treasure(34)"><img src="assets/block40.png" alt="Mystery block"></td>
+                <td id="35" onclick="treasure(35)"><img src="assets/block40.png" alt="Mystery block"></td>
+            </tr>
+        </table>
+<!--        <p>Score:</p>
+        <p id="counter">0</p>-->
+    <script type="text/javascript" src="treasureHunt2.js"></script>
+<!--        <img src="clownBackground.jpg" alt="creepy clown image" width="600px"> -->
+        <!--<hr>
+        <footer id="footer">Made by Diego & Jake <br> <a href="#top">top</a>
+        <br> <a href="https://en.wikipedia.org/wiki/Clown" target="_blank">Wiki</a></footer>-->
+    </body>
+</html>
